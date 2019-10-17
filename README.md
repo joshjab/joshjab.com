@@ -1,2 +1,0 @@
-# joshjab.com
-Portfolio Website
