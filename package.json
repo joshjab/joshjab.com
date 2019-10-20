@@ -2,6 +2,7 @@
   "name": "joshjab.com",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://joshjab.github.io/joshjab.com/",
   "dependencies": {
     "@material-ui/core": "^4.5.1",
     "react": "^16.9.0",
@@ -13,13 +14,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
     "server": "node-env-run server --exec nodemon | pino-colada",
     "dev": "run-p server start"
-  },
-  "proxy": "http://localhost:3001",
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": [
     ">0.2%",
