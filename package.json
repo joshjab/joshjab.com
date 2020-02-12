@@ -2,37 +2,40 @@
   "name": "joshjab.com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://joshjab.github.io/joshjab.com/",
+  "homepage": "http://joshjab.com/",
   "dependencies": {
-    "@material-ui/core": "^4.5.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.4.1",
+    "gh-pages": "^2.2.0",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.1.1"
+    "react-scripts": "3.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
-    "server": "node-env-run server --exec nodemon | pino-colada",
-    "dev": "run-p server start"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "express-pino-logger": "^4.0.0",
-    "node-env-run": "^3.0.2",
-    "nodemon": "^1.19.3",
-    "npm-run-all": "^4.1.5",
-    "pino-colada": "^1.4.5"
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
