@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -10,38 +10,53 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import profile from './profile.png'
 import pilot from './img/pilot.jpg'
+import auburn from './img/auburn.png'
+import trideum from './img/trideum.png'
 
 function App() {
   return (
     <div className="Home">
       <Navbar bg="dark" variant="dark" sticky="top">
-        <Navbar.Brand>Joshua Jablonowski</Navbar.Brand>
-        <Nav className="mr-auto justify-content-end" style={{ width: "100%" }}>
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#projects">Projects</Nav.Link>
-          <Nav.Link href="#blog">Blog</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
-        </Nav>
+        <Navbar.Brand className="navStyle">Joshua Jablonowski</Navbar.Brand>
+          <NavDropdown className="navStyle">
+          <NavDropdown.Item href="#home">Home</NavDropdown.Item>
+          <NavDropdown.Item href="#projects">Projects</NavDropdown.Item>
+          <NavDropdown.Item href="#blog">Blog</NavDropdown.Item>
+          <NavDropdown.Item href="#contact">Contact</NavDropdown.Item>
+          </NavDropdown>
+          
       </Navbar>
     <div className="HomeContent">
       <Container fluid >
         <Row className="section">
           <Col></Col>
-          <Col className=" rounded shadow Home-header-card">
-            <Row className="centerUp">
-              <Image src={profile} roundedCircle className="Home-img"></Image>
+          <Col className="rounded shadow Home-header-card" xs={8}>
+            <Row>
+              <Col xs={3} sm={3}>
+                <Image src={trideum} className="Home-side-img2"></Image>
+              </Col>
+              <Col xs={6} sm={6}>
+                <Image src={profile} roundedCircle className="Home-img"></Image>
+              </Col>
+              <Col xs={3} sm={3}>
+                <Image src={auburn} className="Home-side-img"></Image>
+              </Col>
             </Row>
             <Row className="centerUp">
               <header className="Home-header">Joshua Jablonowski</header>
-            </Row>
+            </Row> 
             <Row className="centerUp">
               <header className="Home-header2">Engineer, Husband, Serial Hobbyist</header>
+            </Row>
+            <Row className="centerUp">
+              <header className="Home-header-intro">
+                Currently working with <a href="https://www.trideum.com/">Trideum Corporation</a> as a Software Engineer at Redstone Arsenal.
+              </header>
             </Row>
           </Col>
           <Col></Col>
         </Row>
         <Row className="HomeCarousel">
-          <Col></Col>
           <Col>
           <Carousel>
             <Carousel.Item>
@@ -70,7 +85,6 @@ function App() {
             </Carousel.Item>
           </Carousel>
           </Col>
-          <Col></Col>
         </Row>
       </Container>
     </div>
