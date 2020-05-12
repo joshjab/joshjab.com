@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar'
+import Button from 'react-bootstrap/Button'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -8,10 +9,15 @@ import Carousel from 'react-bootstrap/Carousel'
 import Image from 'react-bootstrap/Image'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import profile from './profile.png'
-import pilot from './img/pilot.jpg'
-import auburn from './img/auburn.png'
-import trideum from './img/trideum.png'
+import resume from './img/Joshua_Jablonowski.pdf'
+
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('./img', false, /\.(png|jpe?g|svg)$/));
 
 function App() {
   return (
@@ -33,13 +39,13 @@ function App() {
           <Col className="rounded shadow Home-header-card" xs={8}>
             <Row>
               <Col xs={3} sm={3}>
-                <Image src={trideum} className="Home-side-img2"></Image>
+                <Image src={images['trideum.png']} className="Home-side-img2"></Image>
               </Col>
               <Col xs={6} sm={6}>
-                <Image src={profile} roundedCircle className="Home-img"></Image>
+                <Image src={images['profile.png']} roundedCircle className="Home-img"></Image>
               </Col>
               <Col xs={3} sm={3}>
-                <Image src={auburn} className="Home-side-img"></Image>
+                <Image src={images['auburn.png']} className="Home-side-img"></Image>
               </Col>
             </Row>
             <Row className="centerUp">
@@ -51,7 +57,11 @@ function App() {
             <Row className="centerUp">
               <header className="Home-header-intro">
                 Currently working with <a href="https://www.trideum.com/">Trideum Corporation</a> as a Software Engineer at Redstone Arsenal.
+
               </header>
+              <Col>
+                <Button variant="dark" href={resume} block>Download My Resume</Button>
+              </Col>         
             </Row>
           </Col>
           <Col></Col>
@@ -60,27 +70,27 @@ function App() {
           <Col>
           <Carousel>
             <Carousel.Item>
-              <img src={pilot}></img>
+              <img src={images['pilot.jpg']}></img>
               <Carousel.Caption>
-                <h3>Piloting</h3>
+                <h3 className="carousel-caption-light">Piloting</h3>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img src={pilot}></img>
+              <img src={images['pilot.jpg']}></img>
               <Carousel.Caption>
-                <h3>Web Design</h3>
+                <h3 className="carousel-caption-light">Web Design</h3>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img src={pilot}></img>
+              <img src={images['sdr.png']}></img>
               <Carousel.Caption>
-                <h3>Software Defined Radio</h3>
+                <h3 className="carousel-caption-dark">Software Defined Radio</h3>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img src={pilot}></img>
+              <img src={images['pilot.jpg']}></img>
               <Carousel.Caption>
-                <h3>Virtual Reality Development</h3>
+                <h3 className="carousel-captoion-light">Virtual Reality Development</h3>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
