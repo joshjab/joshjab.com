@@ -1,0 +1,23 @@
+.hatSelector{
+    height: 65vmin;
+  }
+.leftBrainHats{
+  width: 15%;
+}
+
+.rightBrainHats{
+  width: 15%;
+}
+
+.leftBrainImage{
+  background-color: white;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.rightBrainImage{
+  background-color: white;
+  padding-left: 0;
+  margin-left: 0;
+}
+
