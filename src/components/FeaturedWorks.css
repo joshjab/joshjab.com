@@ -29,4 +29,9 @@ h6{
     color: #666666;
     text-transform: uppercase;
     font-weight: normal;
+    font-size: 5vmin;
+  }
+
+  p{
+      margin: 0;
   }

@@ -29,6 +29,7 @@ p{
   padding: 2vmin;
   text-align: center;
   width: 100%;
+  font-size: 3vmin;
 }
 
 .navLinkImage{
@@ -37,4 +38,12 @@ p{
 
 .navLink{
   display: inline-block;
+}
+
+.mr-auto{
+  font-size: 4vmin;
+}
+
+.btn{
+  font-size: 4vmin;
 }

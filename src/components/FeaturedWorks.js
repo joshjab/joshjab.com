@@ -54,12 +54,6 @@ export default class FeaturedWorks extends Component {
                         <Card.Title>Card Title</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="cardLink">
-                        <Card.Img  className="cardImage" variant="top" src={images['icon_tx.png']} />
-                        <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        </Card.Body>
-                    </Card>
                 </Row>   
             </Container>
         </div>
