@@ -21,3 +21,12 @@
   margin-left: 0;
 }
 
+.profileImage{
+  margin-top: 5vmin;
+  width: 45vmin;
+}
+
+h2{
+  text-align: center;
+  margin-top: 2vmin;
+}

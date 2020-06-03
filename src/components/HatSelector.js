@@ -12,26 +12,27 @@ function importAll(r) {
     return images;
   }
 
-const images = importAll(require.context('./img', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../img', false, /\.(png|jpe?g|svg)$/));
 
 export default class HatSelector extends Component {
     render() {
         return (
             <div className="hatSelector">
                 <Container fluid>
+                    <Row></Row>
                     <Row>
-                    <Col xs={2} className="leftBrainHats">
-                        {/* <Image src={images['left.png']} fluid/> */}
-                    </Col>
-                    <Col xs={4} className="leftBrainImage">
-                        {/* <Image src={images['left.png']} fluid/> */}
-                    </Col>
-                    <Col xs={4} className="rightBrainImage">
-                        {/* <Image src={images['right.png']} fluid/> */}
-                    </Col>
-                    <Col xs={2} className="rightBrainHats">
-                        {/* <Image src={images['right.png']} fluid/> */}
-                    </Col>
+                        <Col></Col>
+                        <Col>
+                            <Image src={images['cropped_profile.jpg']} roundedCircle className="profileImage"/>
+                        </Col>
+                        <Col></Col>
+                    </Row>
+                    <Row>
+                        <Col xs={1}></Col>
+                        <Col xs={10}>
+                            <h2>Joshua Jablonowski</h2>
+                        </Col>
+                        <Col xs={1}></Col>
                     </Row>
                 </Container>
             </div>
