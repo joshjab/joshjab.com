@@ -30,7 +30,7 @@ export default class FeaturedWorks extends Component {
                     <Col xs={1} md={8}></Col>
                 </Row>
                 <Row className="aboutMe" fluid>
-                    <p>Currently working with Trideum Corporation as a Software Engineer at Redstone Arsenal.</p>
+                    <p>Currently working with Trideum Corporation as a Software Engineer at Redstone Arsenal, AL</p>
                 </Row>
                 <Row fluid>
                     <p><strong>My latest work</strong></p>

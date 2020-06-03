@@ -5,11 +5,13 @@ import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Image from 'react-bootstrap/Image'
+import { HashRouter, Route, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import HatSelector from './components/HatSelector'
-import FeaturedWorks from './components/FeaturedWorks'
+import Home from './components/Home'
+import About from './components/About'
+import Projects from './components/Projects'
+import Blog from './components/Blog'
 import './App.css';
 
 function importAll(r) {
@@ -45,8 +47,20 @@ function App() {
         </Nav> 
         </Navbar.Collapse>      
       </Navbar>
-      <HatSelector />
-      <FeaturedWorks />
+      <Switch>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
+        <Route path="/blog">
+          <Blog />
+        </Route>
+      </Switch>     
       <div className="footer">
         <Container fluid>
           <Row className="footer">
