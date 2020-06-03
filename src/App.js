@@ -6,10 +6,11 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import resume from './img/Joshua_Jablonowski.pdf'
 import HatSelector from './components/HatSelector'
+import Card from 'react-bootstrap/Card'
+import './App.css';
 
 function importAll(r) {
   let images = {};
@@ -31,13 +32,15 @@ function App() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
+        <Nav className="mr-auto" >
           <Nav.Link href="#about">About</Nav.Link>
           <Nav.Link href="#projects">Projects</Nav.Link>
-          <Nav.Link href="#blog">Blog</Nav.Link>
-          <Nav.Link href="#contact">Mail</Nav.Link>
-          <Nav.Link href="#contact">LinkedIn</Nav.Link>      
+          <Nav.Link href="#blog">Blog</Nav.Link>   
         </Nav>
+        <Nav className="justify-content-end">
+          <Nav.Link href="#mail" className="justify-content-end"><img src={images['mail_icon.png']} className="navLinkImage"/></Nav.Link>
+          <Nav.Link href="#linkedin" className="justify-content-end"><img src={images['linkedin_icon.png']} className="navLinkImage"/></Nav.Link>   
+        </Nav> 
         </Navbar.Collapse>      
       </Navbar>
       <HatSelector />
@@ -51,33 +54,41 @@ function App() {
             </Col>
             <Col xs={1} md={8}></Col>
           </Row>
-          <Row className="aboutMe">
-            <p>Blah blah blah text text</p>
+          <Row className="aboutMe" fluid>
+            <p>Currently working with Trideum Corporation as a Software Engineer at Redstone Arsenal.</p>
           </Row>
-          <br/>
-          <Row>
-            <p>My latest:</p>
+          <Row fluid>
+            <p><strong>My latest work</strong></p>
           </Row>     
           <Row className="latest">
-              <Col>
-                <p>Card here</p>
-              </Col>
-              <Col>
-                <p>Card here</p>
-              </Col>
-              <Col>
-                <p>Card here</p>
-              </Col>
+              <Card className="cardLink">
+                <Card.Img variant="top" src={images['icon_tx.png']} />
+                <Card.Body>
+                  <Card.Title>Card Title</Card.Title>
+                </Card.Body>
+              </Card>
+              <Card className="cardLink">
+                <Card.Img variant="top" src={images['icon_tx.png']} />
+                <Card.Body>
+                  <Card.Title>Card Title</Card.Title>
+                </Card.Body>
+              </Card>
+              <Card className="cardLink">
+                <Card.Img variant="top" src={images['icon_tx.png']} />
+                <Card.Body>
+                  <Card.Title>Card Title</Card.Title>
+                </Card.Body>
+              </Card>
           </Row>   
         </Container>
       </div>
       <div className="footer">
         <Container fluid>
           <Row className="footer">
-            <Col xs={8}>
+            <Col xs={7} sm={3} md={3}>
               <p>&#169; Joshua Jablonowski</p>
             </Col>  
-            <Col xs={4}>
+            <Col xs={5} sm={9} md={9}>
               <Button href="#" variant="dark" className="topButton">^</Button>
             </Col>
           </Row>

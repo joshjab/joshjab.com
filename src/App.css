@@ -7,7 +7,6 @@
 }
 
 .featuredWorks{
-  height: 81vmin;
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
   background: #fafafa;
   border-bottom: #dddddd solid 1px;
@@ -31,9 +30,35 @@ h6{
   margin-top: 2vmin;
   font-size: .8rem;
   margin-bottom: 2vmin;
+  text-align: left;
 }
 
 .topButton{
   position: absolute;
   right: 10px;
+}
+
+.latest{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cardLink{
+  background: #FFF;
+  padding: 5% 5% 0 5%;
+  margin: 0 0 1.5em 0;
+  display: block;
+  border-radius: 3px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0)
+}
+
+p{
+  padding: 2vmin;
+  text-align: center;
+  width: 100%;
+}
+
+.navLinkImage{
+  width: 10%;
 }

@@ -21,7 +21,7 @@ export default class HatSelector extends Component {
                 <Container fluid>
                     <Row>
                     <Col xs={2} className="leftBrainHats">
-                        <p>Test</p>
+                        {/* <Image src={images['left.png']} fluid/> */}
                     </Col>
                     <Col xs={4} className="leftBrainImage">
                         {/* <Image src={images['left.png']} fluid/> */}
@@ -30,7 +30,7 @@ export default class HatSelector extends Component {
                         {/* <Image src={images['right.png']} fluid/> */}
                     </Col>
                     <Col xs={2} className="rightBrainHats">
-                        <p>Test</p>
+                        {/* <Image src={images['right.png']} fluid/> */}
                     </Col>
                     </Row>
                 </Container>
