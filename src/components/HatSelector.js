@@ -19,13 +19,10 @@ export default class HatSelector extends Component {
         return (
             <div className="hatSelector">
                 <Container fluid>
-                    <Row></Row>
                     <Row>
-                        <Col></Col>
-                        <Col>
+                        <Col >
                             <Image src={images['cropped_profile.jpg']} roundedCircle className="profileImage"/>
                         </Col>
-                        <Col></Col>
                     </Row>
                     <Row>
                         <Col xs={1}></Col>

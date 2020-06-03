@@ -23,10 +23,14 @@
 
 .profileImage{
   margin-top: 5vmin;
-  width: 45vmin;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vmin;
 }
 
 h2{
   text-align: center;
+  font-size: 6vmin;
   margin-top: 2vmin;
 }
