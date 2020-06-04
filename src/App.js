@@ -48,7 +48,7 @@ function App() {
         </Navbar.Collapse>      
       </Navbar>
       <Switch>
-        <Route exact path="/">
+        <Route path="/">
           <Home />
         </Route>
         <Route path="/about">
