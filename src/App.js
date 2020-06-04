@@ -26,7 +26,7 @@ function App() {
   return (
     <div>
       <Navbar collapseOnSelect className="color-nav" variant="dark" expand="sm">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="#">
           <img src={images['icon_tx.png']}
           className="brandLogo"
           alt="JoshJab Logo"
@@ -49,9 +49,6 @@ function App() {
       </Navbar>
       <Switch>
         <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-        <Route path="/home">
           <Home />
         </Route>
         <Route path="/about">
