@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Home from './components/Home'
@@ -16,7 +16,7 @@ import './App.css';
 
 function importAll(r) {
   let images = {};
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); return true;});
   return images;
 }
 
@@ -41,8 +41,8 @@ function App() {
         </Nav>
         <Nav>
           <Nav.Item>
-            <Nav.Link className="navLink" href="mailto:joshjab@gmail.com" ><img src={images['mail_icon.png']} className="navLinkImage"/></Nav.Link>
-            <Nav.Link  className="navLink" href="https://www.linkedin.com/in/joshua-jablonowski/" ><img src={images['linkedin_icon.png']} className="navLinkImage"/></Nav.Link>  
+            <Nav.Link className="navLink" href="mailto:joshjab@gmail.com" ><img src={images['mail_icon.png']} className="navLinkImage" alt="Mail"/></Nav.Link>
+            <Nav.Link  className="navLink" href="https://www.linkedin.com/in/joshua-jablonowski/" ><img src={images['linkedin_icon.png']} className="navLinkImage" alt="LinkedIn"/></Nav.Link>  
           </Nav.Item> 
         </Nav> 
         </Navbar.Collapse>      
@@ -60,7 +60,7 @@ function App() {
         <Route path="/blog">
           <Blog />
         </Route>
-      </Switch>     
+      </Switch>   
       <div className="footer">
         <Container fluid>
           <Row className="footer">

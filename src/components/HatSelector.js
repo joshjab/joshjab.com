@@ -8,7 +8,7 @@ import './HatSelector.css';
 
 function importAll(r) {
     let images = {};
-    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); return true;});
     return images;
   }
 
@@ -21,15 +21,11 @@ export default class HatSelector extends Component {
                 <Container fluid>
                     <Row>
                         <Col >
-                            <Image src={images['cropped_profile.jpg']} roundedCircle className="profileImage"/>
+                            <Image src={images['profile.png']} roundedCircle className="profileImage"/>
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={1}></Col>
-                        <Col xs={10}>
-                            <h2>Joshua Jablonowski</h2>
-                        </Col>
-                        <Col xs={1}></Col>
+                        <h2>Joshua Jablonowski</h2>
                     </Row>
                 </Container>
             </div>

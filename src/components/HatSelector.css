@@ -33,4 +33,7 @@ h2{
   text-align: center;
   font-size: 7vmin;
   margin-top: 2vmin;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
