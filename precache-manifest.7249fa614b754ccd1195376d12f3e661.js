@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ec3b0d624bf253ef1aae5f5614c26fb5",
+    "revision": "e24fba667b3bba1bc0d5c224ab5b1f68",
     "url": "/index.html"
   },
   {
-    "revision": "d10cc58af8fb708c26a0",
+    "revision": "98061ca798459feb301d",
     "url": "/static/css/2.69121389.chunk.css"
   },
   {
-    "revision": "8679d1cc203fbbbac864",
+    "revision": "51e091dcd30a8fe5716a",
     "url": "/static/css/main.4ba9e64a.chunk.css"
   },
   {
-    "revision": "d10cc58af8fb708c26a0",
-    "url": "/static/js/2.d73d69ae.chunk.js"
+    "revision": "98061ca798459feb301d",
+    "url": "/static/js/2.8d97eb7e.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/static/js/2.d73d69ae.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.8d97eb7e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8679d1cc203fbbbac864",
-    "url": "/static/js/main.c115dd5c.chunk.js"
+    "revision": "51e091dcd30a8fe5716a",
+    "url": "/static/js/main.8157c90c.chunk.js"
   },
   {
     "revision": "88b8fa873dfb21cec049",
     "url": "/static/js/runtime-main.6bcf9d13.js"
+  },
+  {
+    "revision": "2b128f6c351a00c2083b0f26c85798c6",
+    "url": "/static/media/97b4ed91-c995-4899-a08d-3f93c33d7737_1.3e3e6571e0308f92d23599066e15ae81.2b128f6c.jpeg"
   },
   {
     "revision": "589fe5a265e8ba4de361df361d8171e3",
@@ -38,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3cfa5199f1aa054cb4b9f81ce2bf3637",
     "url": "/static/media/cropped_profile.3cfa5199.jpg"
+  },
+  {
+    "revision": "3dbf96e0c08bd4a39441b81ba4713662",
+    "url": "/static/media/gnuradio_logo_glyphs_as_paths.3dbf96e0.svg"
   },
   {
     "revision": "da199afc578ed732f9fac9f91d56a76d",
