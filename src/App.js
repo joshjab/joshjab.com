@@ -48,18 +48,10 @@ function App() {
         </Navbar.Collapse>      
       </Navbar>
       <Switch>
-        <Route path="/">
-          <Home />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-        <Route path="/blog">
-          <Blog />
-        </Route>
+        <Route exact path="/" component={Home}></Route>
+        <Route path="/about"  component={About}></Route>
+        <Route path="/projects"  component={Projects}></Route>
+        <Route path="/blog"  component={Blog}></Route>
       </Switch>   
       <div className="footer">
         <Container fluid>
