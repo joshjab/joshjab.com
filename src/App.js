@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'
-import Blog from './components/Blog'
+import BlogApp from './components/BlogApp'
 import './App.css';
 
 function importAll(r) {
@@ -52,7 +52,7 @@ function App() {
           <Route exact path="/" component={Home}></Route>
           <Route path="/about"  component={About}></Route>
           <Route path="/projects"  component={Projects}></Route>
-          <Route path="/blog"  component={Blog}></Route>
+          <Route path="/blog"  component={BlogApp}></Route>
         </Switch>   
         <div className="footer">
           <Container fluid>

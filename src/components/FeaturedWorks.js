@@ -29,10 +29,10 @@ export default class FeaturedWorks extends Component {
                     </Col>
                     <Col xs={1} md={8}></Col>
                 </Row>
-                <Row className="aboutMe" fluid>
+                <Row className="aboutMe">
                     <p>Currently working with Trideum Corporation as a Software Engineer at Redstone Arsenal, AL</p>
                 </Row>
-                <Row fluid>
+                <Row>
                     <p><strong>My latest work</strong></p>
                 </Row>     
                 <Row className="latest">
