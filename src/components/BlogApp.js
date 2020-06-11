@@ -33,7 +33,6 @@ const BlogApp = () => {
         <ThemeProvider theme={themeMode} toggleTheme={themeToggler}>
           <GlobalStyles />
           <Router />
-          <Toggle theme={theme} toggleTheme={themeToggler} />
         </ThemeProvider>
       </ApolloProvider>
     </>

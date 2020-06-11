@@ -7,6 +7,7 @@ export const CardContainer = styled.div`
   padding: 10px;
   transition: 0.2s;
   position: relative;
+  background-color: #fafafa;
 
   :hover {
     background-color: ${props => props.theme.mode === 'light' ? '#F5F5F5' : '#3B4252'};

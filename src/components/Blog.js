@@ -40,13 +40,11 @@ const GET_POSTS = gql`
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
-  console.log("Error starts here");
   const { loading, error, data } = useQuery(GET_POSTS);
 
   useEffect(() => {
     if (!loading) {
       if (error) {
-        console.log("We errored here!!");
         console.error(error);
       }
 
@@ -58,7 +56,6 @@ const Blog = () => {
 
   return (
     <>
-      <Header />
       <BlogContainer>
         {
           loading
